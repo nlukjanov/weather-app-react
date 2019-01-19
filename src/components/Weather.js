@@ -28,6 +28,9 @@ class Weather extends Component {
             Condition: {this.props.description}
           </p>
         }
+        {
+          this.props.error && <p>{this.props.error}</p>
+        }
       </div>
     );
   }
